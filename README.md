@@ -17,7 +17,7 @@ Este projeto apresenta um chatbot de suporte emocional construído com o modelo 
 - **Prettyconf**: Biblioteca para gerenciamento de configurações do projeto.
 
 ## Como Utilizar
-1. Clone o repositório do projeto.
+1. Clone o repositório do projeto (usando HTTPS ou exporte em um ZIP).
 2. Instale as dependências listadas no arquivo `requirements.txt`.
 
 
