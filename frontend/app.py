@@ -10,11 +10,11 @@ from rich.prompt import Prompt
 from time import sleep
 
 # Definição do tema customizado
-custom_theme = Theme({"info": "bold cyan", "user": "bold red", "ai": "bold magenta", "panel": "white", "error": "bold yellow"})
+custom_theme = Theme({"info": "bold cyan", "user": "bold red", "ai": "bold green", "panel": "white",})
 console = Console(theme=custom_theme)
 
 def main():
-    console.print(Panel("                                                                                           🌿 BEM-VINDO AO PEACEFUL MIND 🌿", style="panel"))
+    console.print(Panel("                                                                                              🌿 BEM-VINDO AO PEACEFUL MIND 🌿", style="panel"))
     
     # Mensagem inicial
     console.print(Panel("💬 Estou aqui para te ouvir e oferecer apoio. Aguarde um momento enquanto me preparo...", style="info"), justify="center")
@@ -23,7 +23,7 @@ def main():
     
     # Seleção aleatória de uma pergunta inicial
     question = choice(utils.QUESTIONS)
-    console.print(Panel(f"\n{question}\n", style="ai", title="[magenta]IA[/]"))
+    console.print(Panel(f"\n{question}\n", style="ai", title="[green]IA[/]"))
 
     while True:
         user_input = Prompt.ask("\n\n[bold red]Você[/]", console=console)
@@ -38,4 +38,4 @@ def main():
                 progress.update(task, advance=randint(1, 3))
                 sleep(0.1)
         console.print("\n\n")
-        console.print(Panel(f"\n{response.text}\n", style="ai", title="[magenta]IA[/]"), justify="center")
+        console.print(Panel(f"\n{response.text}\n", style="ai", title="[green]IA[/]"), justify="center")
