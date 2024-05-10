@@ -24,6 +24,4 @@ class Settings:
     "encorajando os usuários a buscar ajuda profissional quando necessário. BE HUMAN!"
     )
 
-
-
 settings = Settings()
