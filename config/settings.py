@@ -13,9 +13,9 @@ class Settings:
     }
     GENERATION_CONFIG = {
         "candidate_count": 1,
-        "temperature": 0.3,
+        "temperature": 0.5,
         "top_p": 0.95,
-        "top_k": 10,
+        "top_k": 5,
     }
     SYSTEM_INSTRUCTION = (
     "Atuar como um terapeuta virtual avançado, oferecendo suporte emocional e "
