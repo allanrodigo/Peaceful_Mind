@@ -1,0 +1,3 @@
+prettyconf
+google-generativeai
+rich
